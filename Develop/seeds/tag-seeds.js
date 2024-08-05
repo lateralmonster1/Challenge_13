@@ -27,6 +27,16 @@ const tagData = [
   },
 ];
 
-const seedTags = () => Tag.bulkCreate(tagData);
+const seedTags = async () => {
+  try {
+    
+    await Tag.destroy({ where: {}, truncate: true });
 
+    await Tag.bulkCreate(tagData);
+
+    console.log('Tags seeded successfully');
+  } catch (error) {
+    console.error('Error seeding tags:', error);
+  }
+};
 module.exports = seedTags;
