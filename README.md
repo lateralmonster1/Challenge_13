@@ -4,12 +4,7 @@
     ## Description
     This is the back-end of a website that includes Sequelize, SQL, and Express modules.
   
-    ## Table of Contents
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
+
     
 * [License](#license)
 
