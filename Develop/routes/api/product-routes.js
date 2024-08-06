@@ -125,7 +125,7 @@ router.delete('/:id', async (req, res) => {
       where: { product_id: req.params.id }
     });
 
-    res.status(204).end(); // No content
+    res.status(204).end(); 
   } catch (err) {
     console.error(err);
     res.status(500).json(err);

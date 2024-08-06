@@ -1,4 +1,4 @@
-const { Product } = require('../models'); // Ensure this path is correct
+const { Product } = require('../models'); 
 
 const productData = [
   {
@@ -35,10 +35,10 @@ const productData = [
 
 const seedProducts = async () => {
   try {
-    // Clear existing data (optional)
+   
     await Product.destroy({ where: {}, truncate: true });
 
-    // Bulk create new products
+    
     await Product.bulkCreate(productData);
 
     console.log('Products seeded successfully');
